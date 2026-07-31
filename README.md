@@ -65,7 +65,7 @@ SBK_RP1 is installed between the power source and the electronic circuit. During
 1. Connect the power source to **VIN** and **GND**.
 2. With correct polarity, the MOSFET turns on and powers **VOUT**.
 3. The voltage drop across the module remains very low.
-4. If the supply polarity is reversed, the MOSFET remains off.
+4. If the supply polarity is reversed, the MOSFET blocks sustained current flow to the protected output.
 5. Current flow is blocked, protecting the connected circuit.
 6. The output status LED indicates when protected power is present at **VOUT**.
 
