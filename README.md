@@ -1,4 +1,4 @@
-# SBK_SP1
+# SBK_RP1
 
 <p align="center">
   <img src="docs/images/module-front.png" alt="Front" height="340">
@@ -13,11 +13,11 @@
 
 ---
 
-## Open-source soft power switch module for learning and embedded electronics projects.
+## Open-source reverse polarity protection module for learning and embedded electronics projects.
 
-SBK_SP1 is a compact, reusable hardware module for battery-powered embedded systems. It allows a momentary push button and a microcontroller GPIO to control power for low-voltage electronic loads while drawing only a few microamps in the OFF state.
+SBK_RP1 is a compact, reusable hardware module that protects low-voltage DC electronic circuits against accidental reverse battery connections. Using a P-channel MOSFET ideal-diode topology, it provides reverse polarity protection with a much lower voltage drop than a conventional series diode. An integrated LED indicates when protected output power is available.
 
-Designed for breadboards, prototypes, and educational projects, SBK_SP1 provides an easy way to add professional soft power management to Arduino, ESP32, RP2040, ATtiny, STM32, and similar microcontroller-based systems.
+Designed for breadboards, prototypes, and educational projects, SBK_RP1 offers a simple way to improve the robustness and reliability of battery-powered embedded systems.
 
 ---
 
@@ -25,10 +25,9 @@ Designed for breadboards, prototypes, and educational projects, SBK_SP1 provides
 
 - Input voltage: **2–12 VDC**
 - Load current: **up to 2 A**
-- High-side **P-channel MOSFET** switching
-- Microcontroller-controlled soft power latching
-- Ultra-low off-state current
-- Power input and output status LEDs
+- Reverse polarity protection using a **P-channel MOSFET**
+- Very low forward voltage drop
+- Protected output power status LED
 - Breadboard-friendly 2.54 mm pin header
 - Optimized for low-cost assembly using JLCPCB Basic components
 
@@ -40,8 +39,7 @@ Designed for breadboards, prototypes, and educational projects, SBK_SP1 provides
 |------|-------------|
 | **VIN** | Power input (2–12 VDC) |
 | **GND** | Ground |
-| **VOUT** | Switched power output |
-| **CTRL** | Control input (0–VIN). Drive HIGH to enable the output. |
+| **VOUT** | Protected power output |
 
 ---
 
@@ -50,26 +48,25 @@ Designed for breadboards, prototypes, and educational projects, SBK_SP1 provides
 ```text
 Battery
    │
-SBK_RP1 (optional)
+SBK_RP1
    │
-SBK_SP1
+SBK_SP1 (optional)
    │
 Embedded System
 ```
 
-A momentary push button is connected to the **CTRL** input to power the system. Once the microcontroller has started, it drives **CTRL** HIGH to keep the module enabled. When the application is ready to shut down, the microcontroller releases the **CTRL** pin, automatically removing power from the system.
+SBK_RP1 is installed between the power source and the electronic circuit. During normal operation it introduces only a very small voltage drop. If the supply is accidentally connected in reverse, the module automatically blocks current, protecting the downstream electronics.
 
 ---
 
 ## Operation
 
-1. The user presses the push button.
-2. The **CTRL** input goes HIGH.
-3. SBK_SP1 enables the power output (**VOUT**).
-4. The microcontroller boots.
-5. The microcontroller drives **CTRL** HIGH to maintain power after the button is released.
-6. When shutdown is requested, the microcontroller drives **CTRL** LOW (or configures it as a high-impedance input).
-7. SBK_SP1 disconnects power from the load.
+1. Connect the power source to **VIN** and **GND**.
+2. With correct polarity, the MOSFET turns on and powers **VOUT**.
+3. The voltage drop across the module remains very low.
+4. If the supply polarity is reversed, the MOSFET remains off.
+5. Current flow is blocked, protecting the connected circuit.
+6. The output status LED indicates when protected power is present at **VOUT**.
 
 ---
 
@@ -85,18 +82,20 @@ A momentary push button is connected to the **CTRL** input to power the system. 
 
 ### Example applications
 
+- Battery-powered embedded systems
 - Portable instruments
-- Battery-powered sensors
+- Sensors
 - Educational electronics projects
-- Custom embedded devices
-  
+- Custom electronic devices
+
 ---
 
 ## Notes
 
-- Designed for low-voltage embedded electronics.
-- Inductive loads require an external flyback diode or equivalent protection.
-- High-capacitance loads may require inrush-current limiting.
+- Designed for low-voltage DC electronic circuits.
+- Protects against accidental reverse polarity connections.
+- Does not provide over-current or over-voltage protection.
+- The output status LED indicates the presence of protected output voltage; it is not a reverse polarity indicator.
 
 ---
 
@@ -108,13 +107,13 @@ This project is fully open-source hardware. You can:
 - Modify the design to suit your application.
 - *(Coming soon)* Purchase a fully assembled board from my Tindie store if you prefer to start experimenting immediately.
 
-👉 [**SBK Tindie Store**](https://www.tindie.com/stores/smartbuildskits/)
+👉 **SBK Tindie Store** *(coming soon)*
 
 ---
 
 ## Related Projects
 
-- [**SBK_RP1**](https://github.com/sbarabe/SBK_RP1) – Reverse Polarity Protection Module
+- [**SBK_SP1**](https://github.com/sbarabe/SBK_SP1) – Soft Power Switch Module
 - [**MémoBot**](https://github.com/sbarabe/MemoBot) – Educational memory game built using SBK_SP1 and SBK_RP1
 
 ---
