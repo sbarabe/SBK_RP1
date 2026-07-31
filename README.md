@@ -24,7 +24,8 @@ Designed for breadboards, prototypes, and educational projects, SBK_RP1 offers a
 ## Features
 
 - Input voltage: **2–12 VDC**
-- Load current: **up to 2 A**
+- Maximum Load current: **2 A**
+- Maximum practical current depends on operating voltage, ambient temperature, PCB cooling, and allowable temperature rise.
 - Reverse polarity protection using a **P-channel MOSFET**
 - Very low forward voltage drop
 - Protected output power status LED
@@ -105,9 +106,9 @@ This project is fully open-source hardware. You can:
 
 - Build your own board using the provided KiCad design files.
 - Modify the design to suit your application.
-- *(Coming soon)* Purchase a fully assembled board from my Tindie store if you prefer to start experimenting immediately.
+- *(Coming soon)* Purchase a fully assembled board if you prefer to start experimenting immediately.
 
-👉 **SBK Tindie Store** *(coming soon)*
+👉 [**SBK Tindie Store**](https://www.tindie.com/stores/smartbuildskits/)
 
 ---
 
@@ -131,3 +132,7 @@ See the [LICENSE](LICENSE) file for the full license text.
 ## Design Files
 
 This project was designed using **KiCad 10**.
+
+- [KiCad hardware files](hardware/)
+- [Bill of materials](hardware/bom.csv)
+- [SBK_RP1 datasheet](docs/SBK_RP1_datasheet.pdf)
