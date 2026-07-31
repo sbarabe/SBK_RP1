@@ -2,5 +2,5 @@ Reference,Qty,Value,Package,Description
 D1,1,RED,0603,Output status LED
 J1,1,1 x 3 pin header,2.54 mm,3-pin header
 Q1,1,AO3401A,SOT-23,P-channel MOSFET
-R1,1,100 kΩ,0603,Gate series resistor
+R1,1,100 kΩ,0603,Gate protection resistor
 R2,1,15 kΩ,0402,Output status LED resistor

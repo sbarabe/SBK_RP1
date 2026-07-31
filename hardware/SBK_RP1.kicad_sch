@@ -1579,7 +1579,7 @@
 				)
 			)
 		)
-		(property "Description" "Gate series resistor"
+		(property "Description" "Gate protection resistor"
 			(at 107.95 135.255 0)
 			(hide yes)
 			(show_name no)
