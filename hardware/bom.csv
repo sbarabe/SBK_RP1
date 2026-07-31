@@ -1,10 +1,6 @@
-﻿Designator,Footprint,Quantity,Value,LCSC Part #
-"D1, D2",0603,2,Red,
-J1,PinHeader_1x04_P2.54mm_Vertical,1,1x4 pin header,
-Q1,SOT-23,1,AO3400A,
-Q2,SOT-23,1,AO3401A,
-R1,0402,1,4.7 kΩ,
-R2,0603,1,100 kΩ,
-R3,0402,1,47 kΩ,
-R4,0402,1,15 kΩ,
-R5,0402,1,10 kΩ,
+Reference,Qty,Value,Package,Description
+D1,1,RED,0603,Output status LED
+J1,1,1 x 3 pin header,2.54 mm,3-pin header
+Q1,1,AO3401A,SOT-23,P-channel MOSFET
+R1,1,100 kΩ,0603,Gate series resistor
+R2,1,15 kΩ,0402,Output status LED resistor
