@@ -122,7 +122,7 @@ These modules are intended for hobbyists, educators, prototypes, and small-scale
 
 ## Related Projects
 
-- [**SBK_RP1**](https://github.com/sbarabe/SBK_SP1) – Soft Power Switch Module
+- [**SBK_SP1**](https://github.com/sbarabe/SBK_SP1) – Soft Power Switch Module
 - [**MémoBot**](https://github.com/sbarabe/MemoBot) – Educational memory game built using SBK_SP1 and SBK_RP1
 
 ---
