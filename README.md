@@ -110,20 +110,40 @@ This project is fully open-source hardware. You can:
 
 ### Assembled Modules
 
-If you would prefer fully assembled modules rather than assembling the PCBs yourself, I can provide professionally assembled modules in small batches on demand.
+If you prefer a ready-to-use module, fully assembled SBK_SP1 boards may be available in small batches on demand.
 
-For availability, pricing, or custom quantities, please contact:
+For availability, pricing, or quantity inquiries, contact:
 
 📧 **SmartBuildsKits@gmail.com**
 
-Assembled modules are intended for hobbyists, educators, prototypes, and small-scale projects. Availability depends on component stock and production capacity.
+These modules are intended for hobbyists, educators, prototypes, and small-scale projects. Availability depends on component stock and production capacity.
 
 ---
 
 ## Related Projects
 
-- [**SBK_SP1**](https://github.com/sbarabe/SBK_SP1) – Soft Power Switch Module
+- [**SBK_RP1**](https://github.com/sbarabe/SBK_SP1) – Soft Power Switch Module
 - [**MémoBot**](https://github.com/sbarabe/MemoBot) – Educational memory game built using SBK_SP1 and SBK_RP1
+
+---
+
+## Contributing
+
+Suggestions, bug reports, and improvements are welcome.
+
+To report a problem or suggest an improvement, open an Issue. Pull Requests are also welcome for corrections, documentation improvements, and design changes that make the project easier to understand or build.
+
+---
+
+## Support the Project
+
+If this project is useful for learning, teaching, or prototyping, you can support its continued development.
+
+Donations help fund prototype hardware, documentation, educational resources, and future open-source projects.
+
+❤️ [**Support the project through PayPal**](https://paypal.me/sbarab?country.x=CA&locale.x=fr_CA)
+
+Thank you for supporting open-source educational hardware.
 
 ---
 
